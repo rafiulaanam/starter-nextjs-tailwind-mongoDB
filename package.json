@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "git" : "git add . && git commit -m'testimonial-added' && git push",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export" :"next export",
+    "deploy": "yarn cache clean && yarn build && yarn export && firebase deploy"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
